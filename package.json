@@ -1,0 +1,20 @@
+{
+  "name": "mmo-full",
+  "version": "0.0.1",
+  "description": "Bulma based static one-pager for MMO",
+  "main": "index.html",
+  "dependencies": {
+    "bulma": "^0.6.1",
+    "html5-boilerplate": "^6.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "bulma",
+    "one-pager"
+  ],
+  "author": "Joz",
+  "license": "ISC"
+}
