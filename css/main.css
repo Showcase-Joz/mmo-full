@@ -103,7 +103,7 @@ body {
   font-family: 'Open Sans', serif;
 }
 
-section.hero {
+section.hero.header {
   height: 90vh;
   background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/bg1.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -180,6 +180,40 @@ section.hero a.navbar-item {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+
+
+
+
+
+
+
+
+   .navbar-item img#logo-img {
+       max-height: 4rem;
+   }
+
+
+
+   .footer {
+       background-color: #00d1b2;
+   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* ==========================================================================
    Helper classes

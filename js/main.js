@@ -1,3 +1,50 @@
+
+
+//focus signup input
+function signUp() {
+    document.getElementById('focus-signUp').focus();
+}
+
+// footer counter method
+
+var n = localStorage.getItem('visitCounter');
+if (n === null) {
+    n = 0;
+}
+n++;
+localStorage.setItem("visitCounter", n);
+$('.counter').each(function() {
+  var $this = $(this),
+      countTo = $this.attr('data-count');
+
+  $({ countNum: $this.text()}).animate({
+    countNum: countTo
+  },
+
+  {
+
+    duration: 8000,
+    easing:'linear',
+    step: function() {
+        var n = localStorage.getItem('visitCounter');
+
+
+      $this.text(Math.floor(this.countNum));
+    },
+    complete: function() {
+      $this.text(this.countNum+(n*2));
+
+      //alert('finished');
+    }
+
+  });
+
+});
+
+
+
+
+
  // set copyright year date
  var currentYear = (new Date()).getFullYear(); {
    $('.year').text(currentYear);
