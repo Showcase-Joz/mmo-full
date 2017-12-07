@@ -180,10 +180,30 @@ section.hero a.navbar-item {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+.bg-green {
+    background-color: #197c4d;
+}
+.is-bottom-marginless {
+    margin-bottom: 12px !important;
+}
+.lead {
+    font-size: initial;
+    line-height: initial;
+}
+#split-panel .columns .column.is-4 {
+    background:  url(../img/bg1.jpg) no-repeat center center local;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+   section.vh90 {
+       height: 90vh;
+   }
 
-
-
-
+section.vh100 {
+    height: 100vh;
+}
 
 
 
@@ -308,8 +328,15 @@ section.hero a.navbar-item {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
+@media only screen and (min-width: 1600px) {
   /* Style adjustments for viewports that meet the condition */
+          .hero-body {
+            padding: 5rem 1.5rem;
+        }
+        .lead {
+            font-size: 1.125rem;
+            line-height: 1.75rem;
+        }
 }
 
 @media print,

@@ -2,8 +2,13 @@
 
 //focus signup input
 function signUp() {
-    document.getElementById('focus-signUp').focus();
-}
+        $('html, body').animate({
+            scrollTop: $('#home').offset().top
+        }, 2000, function() {
+            $('#mce-EMAIL').focus();
+        });
+    }
+
 
 // footer counter method
 
