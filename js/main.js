@@ -3,7 +3,7 @@
 //focus signup input
 function signUp() {
         $('html, body').animate({
-            scrollTop: $('#home').offset().top
+            scrollTop: $('body').offset().top
         }, 2000, function() {
             $('#mce-EMAIL').focus();
         });

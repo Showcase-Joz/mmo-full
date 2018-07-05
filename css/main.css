@@ -49,6 +49,9 @@ hr {
   padding: 0;
 }
 
+
+
+
 /*
  * Remove the gap between audio, canvas, iframes,
  * images, videos and the bottom of their containers:
@@ -102,18 +105,136 @@ body {
   background: #EFF3F4;
   font-family: 'Open Sans', serif;
 }
+.content h2,
+.content h4 {
+  color: white;
+}
+/* #Misc */
+.scroll {
+  overflow-y: auto;
+  margin: 0 -10px;
+}
+.scroll-thin::-webkit-scrollbar {
+  width: 10px;
+}
 
-section.hero.header {
-  height: 90vh;
+.scroll-thin::-webkit-scrollbar-thumb {
+    background: #C39F3B;
+}
+.scroll-thin::-webkit-scrollbar-track {
+    background: #0C6A60;
+}
+#services>img#logo-img {
+    height: 70px;
+    width: auto;
+    margin: auto;
+}
+
+.terms h1,
+.terms h2,
+.terms h3,
+.terms h4 {
+  color: #363636;
+  font-weight: 600;
+  line-height: 1;
+  margin: 10px auto;
+}
+.terms h2 {
+  font-size: 1.2rem;
+}
+.terms h4 {
+  font-size: 0.7rem;
+  font-weight: bold;
+}
+
+ol.toc {
+  margin-left: 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.menu-list {
+  line-height: 1.25;
+  list-style: circle;
+  list-style-position: inside;
+  list-style-type: unset;
+}
+.menu-list li ul {
+  border-left: none;
+}
+#home section.hero.header {
+  height: 100vh;
   background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/bg1.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
-section.hero a.navbar-item {
-    color: white;
+#wills section.hero.header {
+  height: 100vh;
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/bg2.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
+#pot section.hero.header {
+  height: 100vh;
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/bg3.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+#iht section.hero.header {
+  height: 100vh;
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/bg4.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+#remember {
+  background-color: whitesmoke;
+  font-size: larger;
+  color: #363636;
+  
+}
+#terms .hero-head,
+#privacy .hero-head {
+    min-height: 200px;
+    background-color: #0C6A60;
+}
+#terms .hero-head .navbar,
+#privacy .hero-head .navbar {
+    background-color: #0C6A60;
+}
+#privacy a.navbar-item.is-active, #privacy a.navbar-link.is-active
+#terms a.navbar-item.is-active, #terms a.navbar-link.is-active{
+    color: whitesmoke;
+}
+#privacy .navbar-item, 
+#privacy .navbar-link,
+#terms .navbar-item, 
+#terms .navbar-link {
+    color: whitesmoke;
+}
+
+#privacy a.navbar-item:hover,
+#privacy a.navbar-item.is-active,
+#privacy a.navbar-link:hover,
+#privacy a.navbar-link.is-active
+#terms a.navbar-item:hover,
+#terms a.navbar-item.is-active,
+#terms a.navbar-link:hover,
+#terms a.navbar-link.is-active {
+  color: #C39F3B;
+}
+
+section.hero a.navbar-item {
+  color: white;
+}
+
 .hero-body .container {
   max-width: 700px;
 }
@@ -127,9 +248,20 @@ section.hero a.navbar-item {
   padding-top: 2rem;
   line-height: 1.5;
 }
+
 .level.box.cta {
   height: 10vh;
+  flex-direction: column;
+  height: 100%;
+  align-items: center;
+  padding-right: 0;
+  padding-left: 0;
 }
+
+.level.box.cta>.level-item {
+  margin-right: inherit;
+}
+
 .features {
   padding: 5rem 0;
 }
@@ -139,7 +271,9 @@ section.hero a.navbar-item {
   border-left: none;
   border-right: none;
 }
-
+.terms {
+  padding-bottom: 40px;
+}
 .card-image>.fa {
   font-size: 8rem;
   padding-top: 2rem;
@@ -180,59 +314,155 @@ section.hero a.navbar-item {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+
 .bg-green {
-    background-color: #197c4d;
+  background-color: #197c4d;
 }
+
 .is-bottom-marginless {
-    margin-bottom: 12px !important;
+  margin-bottom: 12px !important;
 }
+
+.margin-bottom-20 {
+  margin-bottom: 20px;
+}
+
+.margin-bottom-50 {
+  margin-bottom: 50px;
+}
+
 .lead {
-    font-size: initial;
-    line-height: initial;
+  font-size: initial;
+  line-height: initial;
 }
-#split-panel .columns .column.is-4 {
-    background:  url(../img/bg1.jpg) no-repeat center center local;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+
+#split-panel>.columns {
+  margin-right: initial;
 }
-   section.vh90 {
-       height: 90vh;
-   }
+
+#home #split-panel .columns .column.is-4 {
+  background: url(../img/bg1.jpg) no-repeat center center local;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+#wills #split-panel .columns .column.is-4 {
+  background: url(../img/bg2.jpg) no-repeat left bottom local;
+  -webkit-background-size: 240%;
+  -moz-background-size: 240%;
+  -o-background-size: 240%;
+  background-size: 240%;
+  -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+}
+#iht #split-panel .columns .column.is-4 {
+  background: url(../img/bg4.jpg) no-repeat -370px center local;
+  -webkit-background-size: 240%;
+  -moz-background-size: 240%;
+  -o-background-size: 240%;
+  background-size: 240%;
+}
+
+.bg-yellow {
+  background-color: #C39F3B;
+}
+
+#services .info,
+#services .counter {
+  color: #0C6A60;
+  font-size: x-large;
+  font-weight: 600;
+}
+
+section.vh90 {
+  height: auto;
+}
 
 section.vh100 {
-    height: 100vh;
+  height: 100vh;
 }
 
+#navbarMenu,
+#services {
+  background-color: #0c6a60;
+}
 
+.navbar-burger {
+  color: #C39F3B;
+}
 
+section.hero a.navbar-item {
+  color: #C39F3B;
+}
+section.hero a.navbar-item:hover {
+    color: whitesmoke;
+}
+a.navbar-item.is-active {
+  background-color: #0c6a60;
+  font-weight: bold;
+}
 
-   .navbar-item img#logo-img {
-       max-height: 4rem;
-   }
+a.navbar-item:hover,
+a.navbar-item.is-active,
+a.navbar-link:hover,
+a.navbar-link.is-active {
+  background-color: transparent;
+}
 
+.navbar-item img#logo-img {
+  max-height: 4rem;
+}
 
+.footer {
+  background-color: #0C6A60;
+  color: #ffffff;
+  padding-bottom: 20px;
+}
 
-   .footer {
-       background-color: #00d1b2;
-   }
+footer>.container .sub-footer {
+  align-items: flex-end;
+}
 
+.footer a {
+  color: #C39F3B;
+}
 
+footer h4.subtitle {
+  color: white;
+}
 
+ img.address.image {
+    text-align: center;
+    margin: 0 auto;
+    left: -50px;
+    width: 60%;
+}
 
+/* ==========================================================================
+   Button styles
+   ========================================================================== */
 
+.btn.basic {
+  -webkit-border-radius: 5;
+  -moz-border-radius: 5;
+  border-radius: 5px;
+  color: #37E38B;
+  font-size: 20px;
+  background: #EFF5F2;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
 
-
-
-
-
-
-
-
-
-
-
+.btn.basic:hover {
+  background: #37E38B;
+  color: #EFF5F2;
+  text-decoration: none;
+}
 
 
 /* ==========================================================================
@@ -328,15 +558,41 @@ section.vh100 {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 1600px) {
+@media only screen and (min-width: 768px) {
+  .level.box.cta {
+    flex-direction: row;
+  }
+  .address.image {
+  width: 200px;
+  position: relative;
+  left: -50px;
+  top: -15px;
+}
+}
+
+@media only screen and (min-width: 1200px) {
   /* Style adjustments for viewports that meet the condition */
-          .hero-body {
-            padding: 5rem 1.5rem;
-        }
-        .lead {
-            font-size: 1.125rem;
-            line-height: 1.75rem;
-        }
+  #navbarMenu {
+    background-color: transparent;
+    padding: 20px;
+  }
+  #home section.hero.header {
+    height: 90vh;
+  }
+
+  .hero-body {
+    padding: 3rem 1.5rem;
+  }
+  .lead {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+  section.vh90 {
+    height: 90vh;
+  }
+  section.vh100 {
+    height: 100vh;
+  }
 }
 
 @media print,
