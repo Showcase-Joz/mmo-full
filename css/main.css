@@ -237,6 +237,7 @@ section.hero a.navbar-item {
 
 .hero-body .container {
   max-width: 700px;
+  width: auto;
 }
 
 .hero-body .title {
@@ -387,7 +388,6 @@ section.vh100 {
   height: 100vh;
 }
 
-#navbarMenu,
 #services {
   background-color: #0c6a60;
 }
